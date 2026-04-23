@@ -1,513 +1,341 @@
-<p>
-    &lt;!DOCTYPE html&gt;
-</p>
-<p>
-    &lt;html lang="en"&gt;
-</p>
-<p>
-    &lt;head&gt;
-</p>
-<p>
-    &lt;meta charset="UTF-8"&gt;
-</p>
-<p>
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-</p>
-<p>
-    &lt;title&gt;Anuja Thorat | Portfolio&lt;/title&gt;
-</p>
-<p>
-    &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"&gt;
-</p>
-<p>
-    &lt;style&gt;
-</p>
-<p>
-    *{margin:0;padding:0;box-sizing:border-box;}
-</p>
-<p>
-    body{
-</p>
-<p>
-      font-family:'Poppins',sans-serif;
-</p>
-<p>
-      background:#0f172a;
-</p>
-<p>
-      color:white;
-</p>
-<p>
-      scroll-behavior:smooth;
-</p>
-<p>
-    }
-</p>
-<p>
-    /* NAV */
-</p>
-<p>
-    nav{
-</p>
-<p>
-      display:flex;
-</p>
-<p>
-      justify-content:space-between;
-</p>
-<p>
-      padding:20px 50px;
-</p>
-<p>
-      position:sticky;
-</p>
-<p>
-      top:0;
-</p>
-<p>
-      background:rgba(0,0,0,0.7);
-</p>
-<p>
-      z-index:1000;
-</p>
-<p>
-    }
-</p>
-<p>
-    nav a{
-</p>
-<p>
-      color:white;
-</p>
-<p>
-      text-decoration:none;
-</p>
-<p>
-      margin-left:20px;
-</p>
-<p>
-      font-weight:500;
-</p>
-<p>
-    }
-</p>
-<p>
-    nav a:hover{
-</p>
-<p>
-      color:#38bdf8;
-</p>
-<p>
-    }
-</p>
-<p>
-    /* HERO */
-</p>
-<p>
-    .hero{
-</p>
-<p>
-      text-align:center;
-</p>
-<p>
-      padding:100px 20px;
-</p>
-<p>
-    }
-</p>
-<p>
-    .profile-img{
-</p>
-<p>
-      width:160px;
-</p>
-<p>
-      height:160px;
-</p>
-<p>
-      border-radius:50%;
-</p>
-<p>
-      border:4px solid #38bdf8;
-</p>
-<p>
-      margin-bottom:20px;
-</p>
-<p>
-    }
-</p>
-<p>
-    .hero h1{font-size:42px;}
-</p>
-<p>
-    .hero p{color:#94a3b8;margin-top:10px;}
-</p>
-<p>
-    .btn{
-</p>
-<p>
-      display:inline-block;
-</p>
-<p>
-      margin-top:20px;
-</p>
-<p>
-      padding:10px 20px;
-</p>
-<p>
-      background:#38bdf8;
-</p>
-<p>
-      color:black;
-</p>
-<p>
-      border-radius:5px;
-</p>
-<p>
-      text-decoration:none;
-</p>
-<p>
-    }
-</p>
-<p>
-    /* SECTION */
-</p>
-<p>
-    section{
-</p>
-<p>
-      padding:80px 80px;
-</p>
-<p>
-    }
-</p>
-<p>
-    h2{
-</p>
-<p>
-      color:#38bdf8;
-</p>
-<p>
-      margin-bottom:20px;
-</p>
-<p>
-    }
-</p>
-<p>
-    /* SKILLS */
-</p>
-<p>
-    .skills span{
-</p>
-<p>
-      display:inline-block;
-</p>
-<p>
-      background:#0ea5e9;
-</p>
-<p>
-      padding:8px 12px;
-</p>
-<p>
-      margin:5px;
-</p>
-<p>
-      border-radius:5px;
-</p>
-<p>
-    }
-</p>
-<p>
-    /* GRID */
-</p>
-<p>
-    .grid{
-</p>
-<p>
-      display:grid;
-</p>
-<p>
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-</p>
-<p>
-      gap:20px;
-</p>
-<p>
-    }
-</p>
-<p>
-    /* CARD */
-</p>
-<p>
-    .card{
-</p>
-<p>
-      background:#1e293b;
-</p>
-<p>
-      padding:20px;
-</p>
-<p>
-      border-radius:10px;
-</p>
-<p>
-      transition:0.3s;
-</p>
-<p>
-    }
-</p>
-<p>
-    .card:hover{
-</p>
-<p>
-      transform:translateY(-8px);
-</p>
-<p>
-    }
-</p>
-<p>
-    /* FOOTER */
-</p>
-<p>
-    footer{
-</p>
-<p>
-      text-align:center;
-</p>
-<p>
-      padding:20px;
-</p>
-<p>
-      background:#020617;
-</p>
-<p>
-    }
-</p>
-<p>
-    &lt;/style&gt;
-</p>
-<p>
-    &lt;/head&gt;
-</p>
-<p>
-    &lt;body&gt;
-</p>
-<p>
-    &lt;!-- NAV --&gt;
-</p>
-<p>
-    &lt;nav&gt;
-</p>
-<p>
-      &lt;h3&gt;Anuja Thorat&lt;/h3&gt;
-</p>
-<p>
-      &lt;div&gt;
-</p>
-<p>
-        &lt;a href="#about"&gt;About&lt;/a&gt;
-</p>
-<p>
-        &lt;a href="#skills"&gt;Skills&lt;/a&gt;
-</p>
-<p>
-        &lt;a href="#projects"&gt;Projects&lt;/a&gt;
-</p>
-<p>
-        &lt;a href="#contact"&gt;Contact&lt;/a&gt;
-</p>
-<p>
-      &lt;/div&gt;
-</p>
-<p>
-    &lt;/nav&gt;
-</p>
-<p>
-    &lt;!-- HERO --&gt;
-</p>
-<p>
-    &lt;section class="hero"&gt;
-</p>
-<p>
-      &lt;img src="profile.jpeg" class="profile-img"&gt;
-</p>
-<p>
-      &lt;h1&gt;Hi, I'm Anuja Thorat&lt;/h1&gt;
-</p>
-<p>
-      &lt;p&gt;Software Developer | Web Developer&lt;/p&gt;
-</p>
-<p>
-      &lt;a href="resume.pdf" class="btn" download&gt;Download Resume&lt;/a&gt;
-</p>
-<p>
-    &lt;/section&gt;
-</p>
-<p>
-    &lt;!-- ABOUT --&gt;
-</p>
-<p>
-    &lt;section id="about"&gt;
-</p>
-<p>
-      &lt;h2&gt;About Me&lt;/h2&gt;
-</p>
-<p>
-      &lt;p&gt;
-</p>
-<p>
-        I am a Computer Science Engineering student passionate about building real-world applications 
-</p>
-<p>
-        and solving problems using modern technologies.
-</p>
-<p>
-      &lt;/p&gt;
-</p>
-<p>
-    &lt;/section&gt;
-</p>
-<p>
-    &lt;!-- SKILLS --&gt;
-</p>
-<p>
-    &lt;section id="skills"&gt;
-</p>
-<p>
-      &lt;h2&gt;Skills&lt;/h2&gt;
-</p>
-<p>
-      &lt;div class="skills"&gt;
-</p>
-<p>
-        &lt;span&gt;Java&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;Python&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;C++&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;HTML&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;CSS&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;JavaScript&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;React&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;Node.js&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;MySQL&lt;/span&gt;
-</p>
-<p>
-        &lt;span&gt;MongoDB&lt;/span&gt;
-</p>
-<p>
-      &lt;/div&gt;
-</p>
-<p>
-    &lt;/section&gt;
-</p>
-<p>
-    &lt;!-- PROJECTS --&gt;
-</p>
-<p>
-    &lt;section id="projects"&gt;
-</p>
-<p>
-      &lt;h2&gt;Projects&lt;/h2&gt;
-</p>
-<p>
-      &lt;div class="grid"&gt;
-</p>
-<p>
-        &lt;div class="card"&gt;
-</p>
-<p>
-          &lt;h3&gt;Student Management System&lt;/h3&gt;
-</p>
-<p>
-          &lt;p&gt;Java CRUD system for managing student data.&lt;/p&gt;
-</p>
-<p>
-        &lt;/div&gt;
-</p>
-<p>
-        &lt;div class="card"&gt;
-</p>
-<p>
-          &lt;h3&gt;Online Reporting System&lt;/h3&gt;
-</p>
-<p>
-          &lt;p&gt;Web system for student performance tracking.&lt;/p&gt;
-</p>
-<p>
-        &lt;/div&gt;
-</p>
-<p>
-        &lt;div class="card"&gt;
-</p>
-<p>
-          &lt;h3&gt;Zero Hunger&lt;/h3&gt;
-</p>
-<p>
-          &lt;p&gt;Food donation platform connecting donors and volunteers.&lt;/p&gt;
-</p>
-<p>
-        &lt;/div&gt;
-</p>
-<p>
-      &lt;/div&gt;
-</p>
-<p>
-    &lt;/section&gt;
-</p>
-<p>
-    &lt;!-- CONTACT --&gt;
-</p>
-<p>
-    &lt;section id="contact"&gt;
-</p>
-<p>
-      &lt;h2&gt;Contact&lt;/h2&gt;
-</p>
-<p>
-      &lt;p&gt;Email: anujathorat2005@gmail.com&lt;/p&gt;
-</p>
-<p>
-      &lt;p&gt;
-</p>
-<p>
-        &lt;a href="https://github.com/Anuja14-a"&gt;GitHub&lt;/a&gt; |
-</p>
-<p>
-        &lt;a href="https://www.linkedin.com/in/anuja-thorat-66592832a"&gt;LinkedIn&lt;/a&gt;
-</p>
-<p>
-      &lt;/p&gt;
-</p>
-<p>
-    &lt;/section&gt;
-</p>
-<p>
-    &lt;footer&gt;
-</p>
-<p>
-      &lt;p&gt;© 2026 Anuja Thorat&lt;/p&gt;
-</p>
-<p>
-    &lt;/footer&gt;
-</p>
-<p>
-    &lt;/body&gt;
-</p>
-<p>
-    &lt;/html&gt;
-</p>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anuja Thorat | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#0f172a;
+
+color:white;
+
+scroll-behavior:smooth;
+
+}
+
+/* NAV */
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:20px 50px;
+
+position:sticky;
+
+top:0;
+
+background:rgba(0,0,0,0.7);
+
+z-index:1000;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:20px;
+
+font-weight:500;
+
+}
+
+nav a:hover{
+
+color:#38bdf8;
+
+}
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+
+padding:100px 20px;
+
+}
+
+.profile-img{
+
+width:160px;
+
+height:160px;
+
+border-radius:50%;
+
+border:4px solid #38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{font-size:42px;}
+
+.hero p{color:#94a3b8;margin-top:10px;}
+
+.btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:10px 20px;
+
+background:#38bdf8;
+
+color:black;
+
+border-radius:5px;
+
+text-decoration:none;
+
+}
+
+/* SECTION */
+
+section{
+
+padding:80px 80px;
+
+}
+
+h2{
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+/* SKILLS */
+
+.skills span{
+
+display:inline-block;
+
+background:#0ea5e9;
+
+padding:8px 12px;
+
+margin:5px;
+
+border-radius:5px;
+
+}
+
+/* GRID */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+/* CARD */
+
+.card{
+
+background:#1e293b;
+
+padding:20px;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+
+padding:20px;
+
+background:#020617;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+<h3>Anuja Thorat</h3>
+
+<div>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="profile.jpeg" class="profile-img">
+
+<h1>Hi, I'm Anuja Thorat</h1>
+
+<p>Software Developer | Web Developer</p>
+
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am a Computer Science Engineering student passionate about building real-world applications
+
+and solving problems using modern technologies.
+
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>Java</span>
+
+<span>Python</span>
+
+<span>C++</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>React</span>
+
+<span>Node.js</span>
+
+<span>MySQL</span>
+
+<span>MongoDB</span>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Student Management System</h3>
+
+<p>Java CRUD system for managing student data.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Online Reporting System</h3>
+
+<p>Web system for student performance tracking.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Zero Hunger</h3>
+
+<p>Food donation platform connecting donors and volunteers.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: anujathorat2005@gmail.com</p>
+
+<p>
+
+<a href="https://github.com/Anuja14-a">GitHub</a> |
+
+<a href="https://www.linkedin.com/in/anuja-thorat-66592832a">LinkedIn</a>
+
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Anuja Thorat</p>
+
+</footer>
+
+</body>
+
+</html>
