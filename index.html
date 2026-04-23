@@ -1,341 +1,296 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Anuja Thorat | Portfolio</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 <style>
-
 *{margin:0;padding:0;box-sizing:border-box;}
-
 body{
-
 font-family:'Poppins',sans-serif;
-
 background:#0f172a;
-
 color:white;
-
 scroll-behavior:smooth;
-
 }
-
 /* NAV */
-
 nav{
-
 display:flex;
-
 justify-content:space-between;
-
 padding:20px 50px;
-
 position:sticky;
-
 top:0;
-
 background:rgba(0,0,0,0.7);
-
 z-index:1000;
-
+flex-wrap: wrap;
 }
-
 nav a{
-
 color:white;
-
 text-decoration:none;
-
-margin-left:20px;
-
+margin-left:15px;
 font-weight:500;
-
 }
-
 nav a:hover{
-
 color:#38bdf8;
-
 }
-
 /* HERO */
-
 .hero{
-
 text-align:center;
-
 padding:100px 20px;
-
 }
-
 .profile-img{
-
 width:160px;
-
 height:160px;
-
 border-radius:50%;
-
 border:4px solid #38bdf8;
-
 margin-bottom:20px;
-
+object-fit: cover;
 }
-
 .hero h1{font-size:42px;}
-
-.hero p{color:#94a3b8;margin-top:10px;}
-
+.hero p{color:#94a3b8;margin-top:10px; font-size: 18px;}
 .btn{
-
 display:inline-block;
-
 margin-top:20px;
-
 padding:10px 20px;
-
 background:#38bdf8;
-
 color:black;
-
 border-radius:5px;
-
 text-decoration:none;
-
+font-weight: 500;
 }
-
-/* SECTION */
-
-section{
-
-padding:80px 80px;
-
-}
-
-h2{
-
-color:#38bdf8;
-
-margin-bottom:20px;
-
-}
-
-/* SKILLS */
-
-.skills span{
-
-display:inline-block;
-
+.btn:hover{
 background:#0ea5e9;
-
-padding:8px 12px;
-
+}
+/* SECTION */
+section{
+padding:60px 80px;
+}
+h2{
+color:#38bdf8;
+margin-bottom:20px;
+font-size: 28px;
+border-bottom: 2px solid #1e293b;
+padding-bottom: 10px;
+}
+/* ABOUT */
+#about p {
+line-height: 1.8;
+color: #cbd5e1;
+}
+/* LISTS (Education & Certifications) */
+.list-item {
+background: #1e293b;
+padding: 15px 20px;
+border-radius: 8px;
+margin-bottom: 15px;
+border-left: 4px solid #38bdf8;
+}
+.list-item h3 {
+color: #e2e8f0;
+margin-bottom: 5px;
+}
+.list-item p {
+color: #94a3b8;
+font-size: 14px;
+}
+/* SKILLS */
+.skills span{
+display:inline-block;
+background:#0ea5e9;
+padding:8px 15px;
 margin:5px;
-
 border-radius:5px;
-
+font-weight: 500;
 }
-
 /* GRID */
-
 .grid{
-
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
-
 }
-
 /* CARD */
-
 .card{
-
 background:#1e293b;
-
-padding:20px;
-
+padding:25px;
 border-radius:10px;
-
 transition:0.3s;
-
+border-top: 4px solid #0ea5e9;
 }
-
 .card:hover{
-
 transform:translateY(-8px);
-
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-
+.card h3 {
+margin-bottom: 10px;
+color: #e2e8f0;
+}
+.card p, .card ul {
+color: #94a3b8;
+font-size: 15px;
+line-height: 1.6;
+}
+.card ul {
+margin-left: 20px;
+margin-top: 10px;
+}
+/* CONTACT */
+.contact-info p {
+margin-bottom: 10px;
+color: #cbd5e1;
+}
+.contact-info a {
+color: #38bdf8;
+text-decoration: none;
+}
+.contact-info a:hover {
+text-decoration: underline;
+}
 /* FOOTER */
-
 footer{
-
 text-align:center;
-
 padding:20px;
-
 background:#020617;
-
+color: #64748b;
 }
 
+@media (max-width: 768px) {
+section { padding: 40px 20px; }
+nav { flex-direction: column; align-items: center; gap: 15px;}
+}
 </style>
-
 </head>
-
 <body>
 
-<!-- NAV -->
-
 <nav>
-
 <h3>Anuja Thorat</h3>
-
 <div>
-
 <a href="#about">About</a>
-
+<a href="#education">Education</a>
 <a href="#skills">Skills</a>
-
 <a href="#projects">Projects</a>
-
+<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
-
 </div>
-
 </nav>
 
-<!-- HERO -->
-
 <section class="hero">
-
-<img src="profile.jpeg" class="profile-img">
-
+<img src="profile.jpeg" class="profile-img" alt="Anuja Thorat">
 <h1>Hi, I'm Anuja Thorat</h1>
-
-<p>Software Developer | Web Developer</p>
-
+<p>Software Engineer | Web Developer</p>
+<p style="font-size: 14px; margin-top: 5px;">Shrirampur, Ukklagaon 413715</p>
 <a href="resume.pdf" class="btn" download>Download Resume</a>
-
 </section>
-
-<!-- ABOUT -->
 
 <section id="about">
-
 <h2>About Me</h2>
-
 <p>
-
-I am a Computer Science Engineering student passionate about building real-world applications
-
-and solving problems using modern technologies.
-
+I am Anuja Thorat, a passionate and dedicated Computer Science Engineering student with a strong interest in software development and web technologies. I enjoy building practical solutions that solve real-world problems using modern tools and technologies. My goal is to secure a challenging position in a reputable organization where I can enhance my skills, contribute to meaningful projects, and grow as a software professional.
 </p>
-
 </section>
 
-<!-- SKILLS -->
+<section id="education">
+<h2>Education</h2>
+<div class="list-item">
+<h3>B.Tech in Computer Science and Engineering (Ongoing)</h3>
+<p>Sanjivani University</p>
+</div>
+<div class="list-item">
+<h3>Diploma in Computer Science</h3>
+<p>Ashok Institute of Engineering and Technology, Polytechnic</p>
+</div>
+<div class="list-item">
+<h3>Schooling</h3>
+<p>New English School, Ukkalgaon (State Board)</p>
+</div>
+</section>
 
 <section id="skills">
-
-<h2>Skills</h2>
-
+<h2>Technical Skills</h2>
 <div class="skills">
-
 <span>Java</span>
-
 <span>Python</span>
-
 <span>C++</span>
-
 <span>HTML</span>
-
 <span>CSS</span>
-
 <span>JavaScript</span>
-
-<span>React</span>
-
+<span>PHP</span>
+<span>React.js</span>
 <span>Node.js</span>
-
 <span>MySQL</span>
-
 <span>MongoDB</span>
-
+<span>Windows</span>
+<span>Linux</span>
 </div>
-
 </section>
-
-<!-- PROJECTS -->
 
 <section id="projects">
-
 <h2>Projects</h2>
-
 <div class="grid">
-
 <div class="card">
-
 <h3>Student Management System</h3>
-
-<p>Java CRUD system for managing student data.</p>
-
+<p>A CRUD-based system developed to manage student records effectively.</p>
+<ul>
+    <li>Implemented core features including add, update, delete, and search.</li>
+    <li>Built using Java and utilized file handling / ArrayList for data management.</li>
+</ul>
 </div>
 
 <div class="card">
-
 <h3>Online Reporting System</h3>
-
-<p>Web system for student performance tracking.</p>
-
+<p>A web-based system designed for managing student performance reports.</p>
+<ul>
+    <li>Significantly improved efficiency in report generation and access for users.</li>
+</ul>
 </div>
 
 <div class="card">
-
-<h3>Zero Hunger</h3>
-
-<p>Food donation platform connecting donors and volunteers.</p>
-
+<h3>Zero Hunger (Ann Seva System)</h3>
+<p>A digital platform created to reduce food wastage by connecting donors, volunteers, and beneficiaries.</p>
+<ul>
+    <li>Includes advanced features like real-time tracking and notifications.</li>
+</ul>
 </div>
-
 </div>
-
 </section>
 
-<!-- CONTACT -->
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="list-item">
+<h3>Oracle Academy</h3>
+<p>Java Fundamentals</p>
+</div>
+<div class="list-item">
+<h3>HackerRank</h3>
+<p>Python Fundamentals</p>
+</div>
+<div class="list-item">
+<h3>GeeksforGeeks</h3>
+<p>MongoDB</p>
+</div>
+<div class="list-item">
+<h3>NPTEL</h3>
+<p>Natural Resource Management</p>
+</div>
+<div class="list-item">
+<h3>Future Prime Skills</h3>
+<p>Generative AI Fluency</p>
+</div>
+</section>
 
-<section id="contact">
-
+<section id="contact" class="contact-info">
 <h2>Contact</h2>
-
-<p>Email: anujathorat2005@gmail.com</p>
-
-<p>
-
-<a href="https://github.com/Anuja14-a">GitHub</a> |
-
-<a href="https://www.linkedin.com/in/anuja-thorat-66592832a">LinkedIn</a>
-
+<p><strong>Email:</strong> <a href="mailto:anujathorat2005@gmail.com">anujathorat2005@gmail.com</a></p>
+<p><strong>Phone:</strong> 9325584657</p>
+<p><strong>Location:</strong> Shrirampur, Ukklagaon 413715</p>
+<p style="margin-top: 15px;">
+<a href="https://github.com/Anuja14-a" target="_blank">GitHub</a> |
+<a href="https://www.linkedin.com/in/anuja-thorat-66592832a" target="_blank">LinkedIn</a>
 </p>
-
 </section>
 
 <footer>
-
-<p>© 2026 Anuja Thorat</p>
-
+<p>© 2026 Anuja Thorat. Thank you for visiting my portfolio!</p>
 </footer>
 
 </body>
-
 </html>
